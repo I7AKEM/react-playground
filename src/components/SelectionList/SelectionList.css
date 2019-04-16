@@ -1,5 +1,6 @@
 .SelectionList{
     height: 100%;
+    /* transition: 1s all; */
 }
 
 .no-list-style{
@@ -21,11 +22,18 @@ ul{
     height: 100%;
     background: red;
     transition: 1s all linear;
+    overflow: hidden;
 }
 
 .option.active {
     width: 100%;
+    background: blue
 }
+
+/* .SelectionList.show{
+    padding-top: 50px;
+    height: calc(100% - 50px);
+} */
 
 .SelectionList.show li{
     width: 100%;
