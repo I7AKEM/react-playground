@@ -1,0 +1,35 @@
+.Header header{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-with-text a{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    background: #4A90E2;
+    padding: 0.8em;
+    width: max-content;
+    border-bottom-right-radius: 50%;
+}
+
+.logo img{
+    width: 1em;
+}
+
+.text{
+    margin: 0 0.5em;
+    font-size: 0.8em;
+}
+
+.text span{
+    display: flex;
+    flex-direction: column;
+}
