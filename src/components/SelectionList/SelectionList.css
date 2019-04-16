@@ -1,0 +1,32 @@
+.SelectionList{
+    height: 100%;
+}
+
+.no-list-style{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    height: 100%;
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    list-style: none;
+}
+
+
+.option{
+    width: 0;
+    height: 100%;
+    background: red;
+    transition: 1s all linear;
+}
+
+.option.active {
+    width: 100%;
+}
+
+.SelectionList.show li{
+    width: 100%;
+}

@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'lv';
+    src:  url('../../assets/fonts/lv.eot?bfutqz');
+    src:  url('../../assets/fonts/lv.eot?bfutqz#iefix') format('embedded-opentype'),
+      url('../../assets/fonts/lv.ttf?bfutqz') format('truetype'),
+      url('../../assets/fonts/lv.woff?bfutqz') format('woff'),
+      url('../../assets/fonts/lv.svg?bfutqz#lv') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'lv' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu:before {
+    content: "\e900";
+  }
+  .icon-password:before {
+    content: "\e901";
+  }
+  .icon-email:before {
+    content: "\e902";
+  }
+  .icon-search:before {
+    content: "\e903";
+  }

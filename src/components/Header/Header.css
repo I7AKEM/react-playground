@@ -1,8 +1,12 @@
-.Header header{
-    position: absolute;
+.Header{
+    position: fixed;
     left: 0;
     right: 0;
     top: 0;
+    z-index: 9;
+}
+
+.Header header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,6 +22,7 @@
     padding: 0.8em;
     width: max-content;
     border-bottom-right-radius: 50%;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 }
 
 .logo img{
@@ -27,6 +32,7 @@
 .text{
     margin: 0 0.5em;
     font-size: 0.8em;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 }
 
 .text span{

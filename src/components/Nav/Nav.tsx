@@ -1,4 +1,5 @@
 import * as React from "react";
+import Icon from '../Icon';
 import "./Nav.css";
 
 export default function Nav() {
@@ -9,7 +10,7 @@ export default function Nav() {
               <li>Indicitors</li>
             </ul>
             <div className="hamburger-menu">
-                {/* <Icon name="menu"/> */}
+                <Icon name="menu"/>
             </div>
         </nav>
     </div>

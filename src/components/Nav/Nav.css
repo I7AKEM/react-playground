@@ -1,0 +1,8 @@
+.Nav nav{
+    margin: 0 0.8em;
+}
+
+.Nav .hamburger-menu{
+    font-size: 1.4em;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}

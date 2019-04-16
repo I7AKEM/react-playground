@@ -5,3 +5,7 @@ body {
   font-size: 100%;
   background: #f2f2f2;
 }
+
+.hide-on-mobile{
+  display: none;
+}

@@ -1,0 +1,23 @@
+.Indicitors{
+    position: relative;
+}
+
+.select-city{
+    height: 210px;
+    background: rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.toolbar{
+    height: 46px;
+    background: #fff;
+}
+
+.list-of-indicitors{
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 1em;
+    grid-column-gap: 1em;
+    grid-auto-rows: max-content;
+}
