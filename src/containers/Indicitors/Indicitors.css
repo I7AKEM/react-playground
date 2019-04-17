@@ -4,7 +4,7 @@
 
 .select-city{
     height: 210px;
-    background: rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     position: relative;
 }
 

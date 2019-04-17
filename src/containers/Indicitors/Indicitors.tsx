@@ -5,11 +5,11 @@ import "./Indicitors.css";
 
 class Indicitors extends React.Component {
   public cities = [
-      { name: "riyadh", imageURL: "riyadh", type: "City" },
-      { name: "makkah", imageURL: "makkah", type: "City" },
-      { name: "madinah", imageURL: "madinah", type: "City" },
-      { name: "jeddah", imageURL: "jeddah", type: "City" },
-      { name: "dammam", imageURL: "dammam", type: "City" }
+      { name: "Riyadh", imageURL: "riyadh", type: "City" },
+      { name: "Makkah", imageURL: "makkah", type: "City" },
+      { name: "Madinah", imageURL: "madinah", type: "City" },
+      { name: "Jeddah", imageURL: "jeddah", type: "City" },
+      { name: "Dammam", imageURL: "dammam", type: "City" }
     ]
   public render() {
     return (

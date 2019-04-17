@@ -36,9 +36,22 @@ export default function SelectionList(props: IListProps) {
             <li
               key={index}
               className={"option" + (selected === index ? " active" : "")}
-              onPointerDown={optionClickedHandler.bind(null, index)}
+              onClick={optionClickedHandler.bind(null, index)}
+              style={{
+                background:
+                  "url(" +
+                  require(`../../assets/img/${option.imageURL}.png`) +
+                  ") no-repeat"
+              }}
             >
-              {option.name}
+            <div className="content">
+              <div className="title">
+                <span>{option.name}</span>
+              </div>
+              <div className="type">
+                <span>{option.type}</span>
+              </div>
+            </div>
             </li>
           );
         })}
