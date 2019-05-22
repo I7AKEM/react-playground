@@ -23,7 +23,7 @@ ul{
     background: url('../../assets/img/default.png') no-repeat;
     background-size: cover !important;
     background-position: center !important;
-    transition: 1s all linear;
+    transition: 0.8s all ease-in;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -43,7 +43,7 @@ ul{
     justify-content: center;
     margin: 0 10%;
     transition: 1.2s all;
-    transition-delay: 0.3s;
+    transition-delay: 0.2s;
     opacity: 0;
     backface-visibility: hidden;
     -webkit-font-smoothing: subpixel-antialiased;

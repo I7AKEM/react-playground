@@ -1,9 +1,15 @@
 import * as React from "react";
+import { connect } from 'react-redux';
 import IndicitorCard from "../../components/IndicitorCard";
 import SelectionList from "../../components/SelectionList";
 import "./Indicitors.css";
 
-class Indicitors extends React.Component {
+interface IProps {
+  periodicity?: number;
+  onChangePeriodicity?: any
+}
+
+class Indicitors extends React.Component<IProps> {
   public cities = [
       { name: "Riyadh", imageURL: "riyadh", type: "City" },
       { name: "Makkah", imageURL: "makkah", type: "City" },
@@ -20,25 +26,24 @@ class Indicitors extends React.Component {
         <div className="toolbar">{/* TODO */}</div>
         <div className="list-of-indicitors">
         <IndicitorCard/>
-        <IndicitorCard/>
-        <IndicitorCard/>
-        <IndicitorCard/>
-        <IndicitorCard/>
-        <IndicitorCard/>
-        <IndicitorCard/>
-        <IndicitorCard/>
-        <IndicitorCard/>
-        <IndicitorCard/>
-        <IndicitorCard/>
-        <IndicitorCard/>
-        <IndicitorCard/>
-        <IndicitorCard/>
-        <IndicitorCard/>
-        <IndicitorCard/>
+        { this.props.periodicity }
+        <button onClick={this.props.onChangePeriodicity}>Change periodicity</button>
         </div>
       </div>
     );
   }
 }
 
-export default Indicitors;
+const mapStatetoProp = (state: { periodicity: any; }) => {
+  return {
+    periodicity: state.periodicity
+  }
+}
+
+const mapDispatchtoProp = (dispatch: any) => {
+  return {
+    onChangePeriodicity: () => dispatch({type: "onChangePeriodicity", })
+  }
+}
+
+export default connect(mapStatetoProp, mapDispatchtoProp)(Indicitors);
